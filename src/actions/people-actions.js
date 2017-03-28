@@ -5,4 +5,4 @@ export const addPerson = (person) => {
     type: types.ADD_PERSON,
     person
   };
-}
+};
