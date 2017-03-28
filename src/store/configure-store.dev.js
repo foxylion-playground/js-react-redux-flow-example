@@ -12,5 +12,5 @@ export default (initialState: ?{}) => {
     devToolsEnhancer(),
     persistState(window.location.href.match(/[?&]debug_session=([^&#]+)\b/))
   );
-  return createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(), enhancer);
+  return createStore(rootReducer, initialState, enhancer);
 };
